@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Very Nice Studio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Getting Camera Icon from the google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Header goes here -->
+        <header>
+            <h2>Very Nice Photography <span class="material-icons" id="camera"> photo_camera </span></h2>
+        </header>
+        <!-- Navigation goes here -->
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="material-icons" id="Home_Icon"> home </span>Home</a></li>
+                <li><a href="gallery.html"><span class="material-icons" id="Gallery_Icon">collections</span>Gallery</a>
+                </li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html"><span class="material-icons"
+                            id="Contact_Icon">perm_contact_calendar</span>Contact
+                        Us</a></li>
+                <li><a href="testimonial.html">Our Testimonials</a></li>
+                <li><a href="#" class="Sign_In_Link">Sign In</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Sign in/up page -->
+            <section class="Login_Pop_Up">
+                <span class="close_icon">X</span>
+                <h2 id="sign_in_heading">Sign in</h2>
+                <!-- Form goes here -->
+                <form id="sign_in_form" method="get" action="#">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                    <input type="submit" id="sbmt_btn" value="Sign in">
+                    <p id="or">OR</p>
+
+                    <section id="create_account_container">
+
+                        <p>Create your account using</p>
+                        <!-- Social Media Icons -->
+                        <section id="Social_Media">
+                            <!-- Facebook Logo -->
+                            <a href="https://facebook.com"><img src="Images/Facebook.png"></a>
+                            <!-- Google Logo -->
+                            <a href="https://google.com"><img src="Images/Google.png"></a>
+                        </section>
+
+                    </section>
+                </form>
+            </section>
+            <!-- Banner Image -->
+            <section id="banner">
+                <img src="Images/Lens.jpg" alt="banner"> <!-- https://pixabay.com/images/id-490806/ -->
+            </section>
+            <!-- Gallery Information -->
+            <section id="gallery_info">
+
+                <p>It's always amazing to hear positive😄 experiences of our customers. Our studio's name represents our
+                    work. Customer's satisfaction is our prime motive. We never let our customers to compromise with the
+                    quality of our work.🌟</p>
+                <p id="owner_name">✍️ -Michael</p>
+
+            </section>
+            <h2 id="Our_Clicks_Heading">Our Clicks !</h2>
+            <!-- Gallery Section -->
+            <section id="gallery_container">
+                <!-- Column 1 -->
+                <div class="column">
+                    <img src="Images/Sports.jpg" alt="Sports">
+                    <img src="Images/White_Cusion.jpg" alt="Baby_on_cusion">
+                    <img src="Images/Micky.jpg" alt="baby_with_micky">
+                    <img src="Images/Garden_White.jpg" alt="kid_in_garden">
+                    <img src="Images/Helly.jpg" alt="woman">
+                </div>
+                <!-- Column 2 -->
+                <div class="column">
+                    <img src="Images/Nest.jpg" alt="baby_in_nest">
+                    <img src="Images/Moon.jpg" alt="baby_on_the_moon">
+                    <img src="Images/Child_Sky.jpg" alt="child">
+                    <img src="Images/Kids.jpg" alt="kids">
+                    <img src="Images/Boy_Telephone.jpg" alt="boy_with_telephone">
+                </div>
+                <!-- Column 3 -->
+                <div class="column">
+                    <img src="Images/Pink_Swing.jpg" alt="baby_on_swing">
+                    <img src="Images/Rainbow.jpg" alt="baby_with_rainbow">
+                    <img src="Images/Robert.jpg" alt="elder">
+                    <img src="Images/Leaf.jpg" alt="baby_on_leaf">
+                </div>
+                <!-- Column 4 -->
+                <div class="column">
+                    <img src="Images/Young_Photographer.jpg" alt="boy_with_camera">
+                    <img src="Images/Boy_Telephone.jpg" alt="boy_with_telephone">
+                    <img src="Images/Round_Chair.jpg" alt="kid_on_chair">
+                    <img src="Images/Green_Basket.jpg" alt="baby_in_basket">
+                </div>
+            </section>
+
+        </main>
+        <!-- Footer goes here -->
+        <footer>
+            <section id="follow_us"><a href="https://facebook.com">Facebook</a> <a
+                    href="https://instagram.com">Instagram</a><a href="https://youtube.com">Youtube</a></section>
+            <section id="Contact_Footer">
+                <span id="contact_heading">Contact</span> <span id="seperator">:</span>
+                <a href="mailto:vnstudio@gmail.com" id="footer_mail">vnstudio@gmail.com</a>
+            </section>
+            <section id="Copyright"> Copyright &copy; Very Nice Studio 2021.All Rights Reserved</section>
+        </footer>
+</body>
+<!-- jQuery goes here -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Javascript Goes Here -->
+<script src="script.js"></script>
+
+</html>

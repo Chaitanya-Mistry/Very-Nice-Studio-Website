@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Nice Photography Studio</title>
+    <!-- External Stylesheet Goes Here -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Getting Icons from the google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Header goes here -->
+        <header>
+            <h2>Very Nice Photography <span class="material-icons" id="camera"> photo_camera </span></h2>
+        </header>
+        <!-- Navigation goes here -->
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="material-icons" id="Home_Icon"> home </span>Home</a></li>
+                <li><a href="gallery.html"><span class="material-icons" id="Gallery_Icon">collections</span>Gallery</a>
+                </li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html"><span class="material-icons"
+                            id="Contact_Icon">perm_contact_calendar</span>Contact Us</a></li>
+                <li><a href="testimonial.html">Our Testimonials</a></li>
+                <li><a href="#" class="Sign_In_Link">Sign In</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Sign in/up page -->
+            <section class="Login_Pop_Up">
+                <span class="close_icon">X</span>
+                <h2 id="sign_in_heading">Sign in</h2>
+                <!-- Form goes here -->
+                <form id="sign_in_form" method="get" action="#">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                    <input type="submit" id="sbmt_btn" value="Sign in">
+                    <p id="or">OR</p>
+
+                    <section id="create_account_container">
+
+                        <p>Create your account using</p>
+                        <!-- Social Media Icons -->
+                        <section id="Social_Media">
+                            <!-- Facebook Logo -->
+                            <a href="https://facebook.com"><img src="Images/Facebook.png"></a>
+                            <!-- Google Logo -->
+                            <a href="https://google.com"><img src="Images/Google.png"></a>
+                        </section>
+
+                    </section>
+                </form>
+            </section>
+            <!-- Banner Image -->
+            <section id="banner">
+                <img src="Images/Lens.jpg" alt="banner"> <!-- https://pixabay.com/images/id-490806/ -->
+            </section>
+            <!-- Our Intro -->
+            <h2 id="Our_Intro_Heading">Welcome</h2>
+            <section id="Our_Intro_Container">
+                <img src="Images/Intro_Image.jpg" alt="Introduction" id="welcome1"> <!--Photo by <a href="https://unsplash.com/@mafonso?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Afonso</a> on <a href="https://unsplash.com/s/photos/low-angle-portrait?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                -->
+                <img src="Images/Intro_Image Mobile.jpg" alt="Introduction" id="welcome2"> <!--Photo by <a href="https://unsplash.com/@mafonso?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Afonso</a> on <a href="https://unsplash.com/s/photos/low-angle-portrait?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                -->
+            </section>
+
+            <!-- Our Services -->
+            <h2 id="Our_Services_Heading">Our Services</h2>
+            <section id="Our_Services_Container">
+                <img src="Images/Kid.jpg" alt="kid"> <!-- Photo by <a href="https://unsplash.com/@dreamworkphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sandeep Kashyap</a> on <a href="https://unsplash.com/@dreamworkphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+
+                <img src="Images/Main Photo.jpg" alt="girl_with_violin"> <!-- From my own family business(Very Nice Studio Photography) -->
+                <img src="Images/Fashion.jpg" alt="boy"> <!-- Photo by <a href="https://unsplash.com/@albertvincentwu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Albert Vincent Wu</a> on <a href="https://unsplash.com/s/photos/fashion-photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                <img src="Images/Wildlife.jpg" alt="fox"> <!-- Photo by <a href="https://unsplash.com/@cneasonj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Jackson</a> on <a href="https://unsplash.com/s/photos/wildlife-photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                <img src="Images/Portrait.jpg" alt="girl"> <!-- Photo by <a href="https://unsplash.com/@alirezarashme?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alireza Rashme</a> on <a href="https://unsplash.com/s/photos/portrait-photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                <img src="Images/bday.jpg" alt="cake"> <!-- Photo by <a href="https://unsplash.com/@anvesh1616?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">A n v e s h</a> on <a href="https://unsplash.com/s/photos/birthday-shoot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+
+            </section>
+
+            <!-- Our Clients -->
+            <h2 id="Our_Clients_Heading">Our Clients</h2>
+            <section id="Our_Clients_Container">
+                <section id="client_1">
+                    <img src="Images/Justin_Trudeau.jpg" alt="Canadian_PM" class="clients_images">
+                    <!-- https://static01.nyt.com/images/2020/07/13/world/13canada-trudeau1/merlin_174524886_23dc5436-6c21-4569-b8ee-7f50a0160745-superJumbo.jpg?quality=75&auto=webp -->
+                </section>
+                <section id="client_2">
+                    <img src="Images/Narendra_Modi.jpg" alt="Indian_PM" class="clients_images">
+                    <!-- https://api.time.com/wp-content/uploads/2020/09/time-100-Narendra-Modi.jpg?w=800&quality=85 -->
+                </section>
+                <section id="client_3">
+                    <img src="Images/Sachin_Tendulkar.jpg" alt="Indian_Cricketer" class="clients_images">
+                    <!-- https://static.toiimg.com/thumb/msid-82227174,imgsize-46343,width-400,resizemode-4/82227174.jpg -->
+                </section>
+                <section id="client_4">
+                    <img src="Images/Alfreda.jpg" alt="Camera_Girl" class="clients_images">
+                    <!-- https://pixabay.com/images/id-5149664/ -->
+                </section>
+
+            </section>
+        </main>
+
+        <!-- Footer goes here -->
+        <footer>
+            <section id="follow_us"><a href="https://facebook.com">Facebook</a> <a href="https://instagram.com">Instagram</a><a href="https://youtube.com">Youtube</a></section>
+            <section id="Contact_Footer">
+                <span id="contact_heading">Contact</span> <span id="seperator">:</span>
+                <a href="mailto:vnstudio@gmail.com" id="footer_mail">vnstudio@gmail.com</a>
+            </section>
+            <section id="Copyright"> Copyright &copy; Very Nice Studio 2021.All Rights Reserved</section>
+        </footer>
+    </div>
+</body>
+<!-- jQuery goes here -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Javascript Goes Here -->
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,14 @@
+/* LOG File of Final Group Project from Group-2 
+  (Chaitanya Mistry, Prabhjot Singh, Priyanka Kokhar, Kanal Chauhan) */
+
+13-11-2021 : Discussed the topic for our website.
+20-11-2021 : Decided what should be there in the website.
+27-11-2021 : Completed the homepage of our website.
+3-12-2021  : Completed the Gallery page of our website.
+4-12-2021  : Completed the About Us page of our website
+5-12-2021  : Completed the Contact Us page of our website.
+6-12-2021  : Completed the Our testimonials page of our website.
+9-12-2021  : Completed the Sign in Page of our website.
+10-12-2021 : Modified the Home & Gallery page as per the instructions from our professor.
+11-12-2021 : Modified the About Us & Contact Us page as per the instructions from our professor.
+12-12-2021 : Modified the Our testimonials page of our website as per the instructions from our professor.

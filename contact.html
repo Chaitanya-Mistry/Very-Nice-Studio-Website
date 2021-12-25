@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Nice Photography Studio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Getting Camera Icon from the google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Header goes here -->
+        <header>
+            <h2>Very Nice Photography <span class="material-icons" id="camera"> photo_camera </span></h2>
+        </header>
+        <!-- Navigation goes here -->
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="material-icons" id="Home_Icon"> home </span>Home</a></li>
+                <li><a href="gallery.html"><span class="material-icons" id="Gallery_Icon">collections</span>Gallery</a>
+                </li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html"><span class="material-icons"
+                            id="Contact_Icon">perm_contact_calendar</span>Contact Us</a></li>
+                <li><a href="testimonial.html">Our Testimonials</a></li>
+                <li><a href="#" class="Sign_In_Link">Sign In</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Sign in/up page -->
+            <section class="Login_Pop_Up">
+                <span class="close_icon">X</span>
+                <h2 id="sign_in_heading">Sign in</h2>
+                <!-- Form goes here -->
+                <form id="sign_in_form" method="get" action="#">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                    <input type="submit" id="sbmt_btn" value="Sign in">
+                    <p id="or">OR</p>
+
+                    <section id="create_account_container">
+
+                        <p>Create your account using</p>
+                        <!-- Social Media Icons -->
+                        <section id="Social_Media">
+                            <!-- Facebook Logo -->
+                            <a href="https://facebook.com"><img src="Images/Facebook.png"></a>
+                            <!-- Google Logo -->
+                            <a href="https://google.com"><img src="Images/Google.png"></a>
+                        </section>
+
+                    </section>
+                </form>
+            </section>
+            <!-- Banner Image -->
+            <section id="banner">
+                <img src="Images/Lens.jpg" alt="banner"> <!-- Photo from Pixabay -->
+            </section>
+
+            <!-- Contact Us Section -->
+            <h2 id="Contact_US_Heading">Have some questions?</h2>
+            <section id="Contact_US">
+                <!-- Contact Form -->
+                <form action="#" id="contact_form">
+                    <label for="name">Enter your name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <label for="email">Enter email address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="USA">USA</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write something.."
+                        style="height:200px" required></textarea>
+
+                    <input type="submit" value="SEND MESSAGE" id="submit">
+                </form>
+
+                <!-- Other Contact us options -->
+                <section id="other_contact_options">
+                    <!-- Email -->
+                    <section id="mail">
+                        <span class="material-icons" id="email_icon">
+                            email
+                        </span><a href="mailto:vnstudio@gmail.com">vnstudio@gmail.com</a>
+                    </section>
+
+                    <!-- Phone -->
+                    <section id="phone">
+                        <span class="material-icons" id="phone_icon">
+                            call
+                        </span><a href="tel:999-999-980">999-999-980</a>
+                    </section>
+
+                    <!-- Location -->
+                    <section id="location">
+                        <span class="material-icons" id="map_icon">
+                            map
+                            </span>
+                        <p>209-210, Grand River Road, GT </p>
+                    </section>
+
+                    <!-- Business Time -->
+                    <section id="Business_Time">
+                        <span class="material-icons" id="clock_icon">
+                            schedule
+                            </span>
+                        <p>Mon - Fri: 9:00 A.M. To 10:00 P.M. </p>
+                    </section>
+                </section>
+            </section>
+
+            <!-- Embedding map from the google maps -->
+            <h2 id="Our_Address">Our Address</h2>
+            <section id="Address">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14625.086328672736!2d72.3834222!3d23.5945911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe72b43e90a19935!2sVery%20Nice%20Studio%20Photography!5e0!3m2!1sen!2sca!4v1634697039539!5m2!1sen!2sca"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </main>
+
+         <!-- Footer goes here -->
+         <footer>
+            <section id="follow_us"><a href="https://facebook.com">Facebook</a> <a href="https://instagram.com">Instagram</a><a href="https://youtube.com">Youtube</a></section>
+            <section id="Contact_Footer">
+                <span id="contact_heading">Contact</span> <span id="seperator">:</span>
+                <a href="mailto:vnstudio@gmail.com" id="footer_mail">vnstudio@gmail.com</a>
+            </section>
+            <section id="Copyright"> Copyright &copy; Very Nice Studio 2021.All Rights Reserved</section>
+        </footer>
+    </div>
+</body>
+<!-- jQuery goes here -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Javascript goes here -->
+<script src="script.js"></script>
+
+</html>

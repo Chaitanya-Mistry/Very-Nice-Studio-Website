@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Nice Photography Studio</title>
+    <!-- External Stylesheet Goes Here -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Getting Icons from the google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Header goes here -->
+        <header>
+            <h2>Very Nice Photography <span class="material-icons" id="camera"> photo_camera </span></h2>
+        </header>
+        <!-- Navigation goes here -->
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="material-icons" id="Home_Icon"> home </span>Home</a></li>
+                <li><a href="gallery.html"><span class="material-icons" id="Gallery_Icon">collections</span>Gallery</a>
+                </li>
+                <li><a href="about_us.html">About US</a></li>
+                <li><a href="contact.html"><span class="material-icons"
+                            id="Contact_Icon">perm_contact_calendar</span>Contact US</a></li>
+                <li><a href="testimonial.html">Our Testimonials</a></li>
+                <li><a href="#" class="Sign_In_Link">Sign In</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Sign in/up page -->
+            <section class="Login_Pop_Up">
+                <span class="close_icon">X</span>
+                <h2 id="sign_in_heading">Sign in</h2>
+                <!-- Form goes here -->
+                <form id="sign_in_form" method="get" action="#">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                    <input type="submit" id="sbmt_btn" value="Sign in">
+                    <p id="or">OR</p>
+
+                    <section id="create_account_container">
+
+                        <p>Create your account using</p>
+                        <!-- Social Media Icons -->
+                        <section id="Social_Media">
+                            <!-- Facebook Logo -->
+                            <a href="https://facebook.com"><img src="Images/Facebook.png"></a>
+                            <!-- Google Logo -->
+                            <a href="https://google.com"><img src="Images/Google.png"></a>
+                        </section>
+
+                    </section>
+                </form>
+            </section>
+            <!-- Banner Image -->
+            <section id="banner">
+                <img src="Images/Lens.jpg" alt="man_with_camera"> <!-- Photofrom Pixabay -->
+            </section>
+
+            <!-- Our Testimonials -->
+            <!-- Customer Review Section -->
+            <section id="customer_review_container">
+                
+                <p>It's always amazing to hear positive 😄 experiences of our customers. Our studio's name represents our work. Customer's satisfaction is our prime motive. We never let our customers to compromise with the quality of our work.🌟</p>
+                <p id="owner_name">✍️ -Michael</p>
+                
+            </section>
+            <h2 id="Our_Testimonial_Heading">What People Say About Us</h2>
+            <!-- Our Testimonial Container -->
+            <section id="Our_Testimonial_Container">
+
+                <!-- Customer-1 -->
+                <section id="customer1" class="customers">
+
+                    <section id="c1_img" class="customer_images">
+                        <img src="Images/Albert.jpg" alt="Man">
+                        <!-- Photo by <a href="https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Albert Dera</a> on <a href="https://unsplash.com/s/photos/portrait?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                    </section>
+
+                    <section id="c1_message" class="customers_messages">
+                        <p>" Very nice service, friendly & results is awesome. Quick response… thank you so much for
+                            your Hardworking Paragbhai. We will be back 🔜 "</p>
+                        <p><span class="highlight_messages">- Albert</span></p>
+                    </section>
+
+                </section>
+
+                <!-- Customer 2 -->
+                <section id="customer2" class="customers">
+
+                    <section id="c2_img" class="customer_images">
+                        <img src="Images/Robert.jpg" alt="Old_Man">
+                        <!--Photo by <a href="https://unsplash.com/@funpictures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robert Godwin</a> on <a href="https://unsplash.com/s/photos/portrait?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                    </section>
+
+                    <section id="c2_message" class="customers_messages">
+                        <p>" One of the best photography in mehsana...👍👍 Parag mistry wellknown for his work as well
+                            as his nature..💐💐 Keep it up and be original...⭐️⭐️⭐️⭐️⭐️ "</p>
+                        <p><span class="highlight_messages">- Robert</span></p>
+                    </section>
+
+                </section>
+
+                <!-- Customer 3 -->
+                <section id="customer3" class="customers">
+
+                    <section id="c3_img" class="customer_images">
+                        <img src="Images/Jake.jpg" alt="Woman">
+                        <!--Photo by <a href="https://unsplash.com/@jakenackos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake Nackos</a> on <a href="https://unsplash.com/s/photos/portrait?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                    </section>
+
+                    <section id="c3_message" class="customers_messages">
+                        <p>" words can say. The photo captures the character of the subject perfectly. Very Nice
+                            Photography ✨ "</p>
+                        <p><span class="highlight_messages">- Jake</span></p>
+                    </section>
+
+                </section>
+            </section>
+        </main>
+
+        <!-- Footer goes here -->
+        <footer>
+            <section id="follow_us"><a href="https://facebook.com">Facebook</a> <a href="https://instagram.com">Instagram</a><a href="https://youtube.com">Youtube</a></section>
+            <section id="Contact_Footer">
+                <span id="contact_heading">Contact</span> <span id="seperator">:</span>
+                <a href="mailto:vnstudio@gmail.com" id="footer_mail">vnstudio@gmail.com</a>
+            </section>
+            <section id="Copyright"> Copyright &copy; Very Nice Studio 2021.All Rights Reserved</section>
+        </footer>
+    </div>
+</body>
+<!-- jQuery goes here -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Javascript goes here -->
+<script src="script.js"></script>
+
+</html>

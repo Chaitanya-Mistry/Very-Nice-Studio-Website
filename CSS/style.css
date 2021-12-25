@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(0, 24, 46);
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight:bold;
+    padding: 9px 0px 4px 0px;
+    border-bottom: .1px solid rgb(204, 204, 204);
+}
+#wrapper{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 51, 51);
+}
+header #camera{
+    position: relative;
+    top:5px;
+    color: white;
+}
+nav{
+    background-color: rgb(0, 24, 46);
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+}
+nav .active{
+    color:rgb(52, 198, 255);
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16.1px;
+    letter-spacing: 2px;
+    margin: 0px 20px;
+    cursor: pointer;
+    transition: all ease .3s;
+    padding: 10px;
+}
+nav ul li a:hover{
+    color:rgb(52, 198, 255);
+}
+.material-icons{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+main{
+    height: 100%;
+}
+/* Login Popup */
+.Login_Pop_Up::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.877);
+    z-index: -1;
+}
+.Login_Pop_Up{
+    border: .5px solid white;
+    position: fixed;
+    color: white;
+    top: 130px;
+    width: 40%;
+    left: 30%;
+    z-index: 2;
+    height: auto;
+    box-shadow: 1px 1px 20px rgb(209, 209, 209);
+    font-family: 'Oxygen', sans-serif;
+    padding-bottom: 30px;
+    display: none;
+}
+.Login_Pop_Up .close_icon{
+    position: absolute;
+    top:5px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Login_Pop_Up .close_icon:hover{
+    color: rgb(255, 28, 28);
+}
+.Login_Pop_Up #sign_in_heading{
+    text-align: center;
+    margin: 40px;
+}
+.Login_Pop_Up #sign_in_form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0px auto; 
+}
+#or{
+    text-align: center;
+    font-size: 14.5px;
+    margin: 13px 0px;
+}
+#sign_in_form input{
+    background-color: black;
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+#sign_in_form #sbmt_btn{
+    padding:10px;
+    font-weight: bold;
+    background-color: rgb(43, 43, 43);
+    cursor: pointer;
+}
+#create_account_container{
+    border-bottom:1px solid dodgerblue;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+#create_account_container #Social_Media{
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#create_account_container #Social_Media img{
+    width: 30px;
+    height: auto;
+    margin: 10px;
+}
+main #banner{
+    margin-top: 2px;
+    width: 100%;
+}
+main #banner img{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+/* Our Intro Section */
+#Our_Intro_Heading,#Owner_Intro_Heading{
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Oxygen', sans-serif;
+    padding:10px;
+}
+#Our_Intro_Container{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 96%;
+    height: auto;
+    margin: 5px auto;
+}
+#Our_Intro_Container img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+}
+#welcome2{
+    display: none;
+}
+#Our_Intro_Container li{
+    list-style:inside;
+    padding:27px 0px;
+    list-style: none;
+    font-family:'Oxygen';
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 0px 50px;
+    font-size: 19px;
+    text-align: center;
+}
+/* Owner */
+#Owner_Intro_Container{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    border-radius: 10px;
+    padding:17px;
+    width: 96%;
+    background-color: white;
+    margin: 5px auto;
+}
+#Owner_Intro_Container #Owner_Image_Container{
+    margin-left: 13px;
+    width: 100%;
+}
+#Owner_Intro_Container #Owner_Image_Container img{
+    width: auto;
+    margin: 0px auto;
+    height: 480px;
+}
+#Owner_Intro_Container #p_container{
+    width: 90%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: .7px;
+}
+.words{
+    margin: 20px;
+}
+/* Our Team Members */
+#Our_Team_Heading{
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Oxygen', sans-serif;
+    padding:10px;
+}
+#Our_Team_Container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:17px;
+    width: 96%;
+    background-color: white;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+#Our_Team_Container .Team_Members{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0px 14px;
+}
+#Our_Team_Container .Team_Members .members_image{
+    width: 45%;
+    height: 100%;
+}
+#Our_Team_Container .Team_Members img{
+    width: 100%;
+    height:100%; 
+    object-fit:cover ;
+}
+#Our_Team_Container .Team_Members .members_details{
+    background-color:rgb(51, 51, 51) ;
+    color: white;
+    padding:10px;
+    width: 54%;
+}
+#Our_Team_Container .Team_Members .members_details p{
+    margin: 14px;
+}
+#Our_Team_Container .Team_Members .members_details .highlight_details{
+    color:rgb(52, 198, 255);
+}
+/* Our Testimonials */
+#Our_Testimonial_Heading{
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Oxygen', sans-serif;
+    padding:10px;
+}
+#customer_review_container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:20px;
+    width: 96%;
+    background-color: rgb(37, 37, 37);
+    margin: 5px auto;
+    height: auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    border: 1px solid white;
+    font-family: 'Tangerine', cursive;
+    font-size: 37px;
+    color: white;
+}
+#customer_review_container #owner_name{
+    text-align: right;
+    color: rgb(52, 198, 255);
+} 
+#Our_Testimonial_Container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:17px;
+    width: 96%;
+    background-color: white;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+}
+#Our_Testimonial_Container .customers{
+    border: 1.5px solid rgb(104, 104, 104);
+    padding:5px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#Our_Testimonial_Container .customers .customer_images{
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+#Our_Testimonial_Container .customers img{
+    width: 100%;
+    height:40%; 
+    object-fit:cover;
+    border-radius:100px ;
+}
+#Our_Testimonial_Container .customers .customers_messages{
+    background-color:rgb(51, 51, 51) ;
+    color: white;
+    padding:20px;
+    width: 73%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#Our_Testimonial_Container .customers .highlight_messages{
+    color:rgb(52, 198, 255);
+}
+/* Our Services Section */
+#Our_Services_Heading{
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Oxygen', sans-serif;
+    padding:10px;
+}
+#Our_Services_Container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:17px;
+    padding-bottom: 0px;
+    width: 96%;
+    background-color: white;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#Our_Services_Container img{
+    margin: -5px 10px 20px 10px;
+    width: 31.9%;
+    height: 250px;
+    object-fit: cover;
+}
+/* Our Clients Section */
+.cnames{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    padding:3px;
+    font-size: 16.4px;
+}
+#Our_Clients_Heading{
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Oxygen', sans-serif;
+    padding:10px;
+}
+#Our_Clients_Container{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:29px;
+    padding-bottom: 0px;
+    width: 96%;
+    background-color: white;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Our_Clients_Container section{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+#Our_Clients_Container section img{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+/* Gallery Page */
+#Our_Clicks_Heading{
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Oxygen', sans-serif;
+    padding:10px;
+}
+#gallery_info{
+    border-radius: 10px;
+    padding:20px;
+    width: 96%;
+    background-color: rgb(37, 37, 37);
+    margin: 5px auto;
+    height: auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    border: 1px solid white;
+    font-family: 'Tangerine', cursive;
+    font-size: 37px;
+    color: white;
+}
+#gallery_info #owner_name{
+    text-align: right;
+    color: rgb(52, 198, 255);
+}
+#gallery_container{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding:20px;
+    width: 96%;
+    background-color: rgb(37, 37, 37);
+    margin: 5px auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    width: 100%;
+}
+/* Contact US Page */
+#Contact_US_Heading{
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Oxygen', sans-serif;
+    padding: 10px;
+    padding-bottom: 14.7px;
+}
+#Contact_US{
+    outline: none;
+    border: 1px solid white;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: 570px;
+    border-radius: 13px;
+    margin:3px 10px 3px 10px;
+    width: 96%;
+    margin: 0px auto;
+    display: flex;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 19px;
+}
+#Contact_US form{
+    width: 70%;
+    margin:10px 20px;
+    padding: 10px;
+}
+#Contact_US form label{
+    display: block;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: .5px;
+    margin:8px 0px;
+}
+#Contact_US form input,#message{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Oxygen', sans-serif;
+    border-radius: 5px;
+}
+#Contact_US form #country{
+    border-radius: 5px;
+    text-align: center;
+}
+#Contact_US form #message{
+    resize: none;
+    margin-bottom: 13px;
+}
+#Contact_US form #submit{
+    border-radius: 5px;
+    outline: none;
+    border:1px solid black;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 17.7px;
+    background-image: linear-gradient(to left,rgba(30, 221, 255, 0.705),rgba(110, 255, 122, 0.705));
+    color: rgb(0, 0, 0);
+    margin: 10px auto;
+}
+#Contact_US #other_contact_options{
+    border-left: .1px solid rgb(131, 131, 131);
+    width: 30%;
+    margin: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    word-spacing: 1px;
+}
+#other_contact_options a{
+    color: white;
+    text-decoration: none;
+}
+#mail{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+#email_icon{
+    position: relative;
+    font-size: 38px;
+    color: dodgerblue;
+    top: -20px;
+    margin:10px 10px;
+}
+#phone{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13px;
+}
+#phone_icon{
+    position: relative;
+    font-size: 38px;
+    color: dodgerblue;
+    top: -20px;
+    margin:10px 10px;
+}
+#location{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13px;
+}
+#map_icon{
+    position: relative;
+    font-size: 38px;
+    color: dodgerblue;
+    top: -20px;
+    margin:10px 10px;
+}
+#Business_Time{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13px;
+}
+#clock_icon{
+    position: relative;
+    font-size: 38px;
+    color: dodgerblue;
+    top: -20px;
+    margin:10px 10px;
+}
+#Our_Address{
+    text-align: center;
+    color:rgb(92, 209, 255);
+    font-family: 'Oxygen', sans-serif;  
+    padding: 12px;
+}
+#Address{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 13px;
+}
+#submit:hover{
+    background-color: rgb(216, 216, 216);
+}
+#submit:active{
+    color:red;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(0, 24, 46);
+    color:white;
+    font-size: 14px;
+    font-family: 'Oxygen', sans-serif;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer #Contact_Footer{
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+    padding:10px;
+}
+footer #contact_heading{
+    color:rgb(92, 209, 255);
+    font-weight: bold;
+}
+footer #follow_us{
+    width: 100%;
+    letter-spacing: .7px;
+    padding:10px;
+}
+footer #follow_us a{
+    padding: 0px 10px;
+}
+footer #follow_us a:hover{
+    color:rgb(52, 198, 255);
+}
+footer #Copyright{
+    width: 200%;
+    letter-spacing: .8px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Responsive site designing goes here */
+@media screen and (max-width:768px){
+    /* Naviagation area */
+    header{
+        font-size: 24.9px;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li{
+        width: 100%;
+        border-top: 1px solid white;
+    }
+    #Home_Icon{
+        position: relative;
+        left:-5px;
+        top:4px;
+    }
+    #Gallery_Icon{
+        position: relative;
+        left:-5px;
+        top:4px;
+    }
+    #Contact_Icon{
+        position: relative;
+        left:-5px;
+        top:4px;
+    }
+    /* Banner */
+    main #banner img{ height: 300px; }
+    /* Our Intro Section */
+    #Our_Intro_Container{
+        width: 93%;
+        margin: 5px auto;
+    }
+    #welcome1{
+        display: none;
+    }
+    #welcome2{
+        display: block;
+    }
+    #Our_Intro_Container img{
+        height: auto;
+        width: 100%;
+    }
+
+    /* Our Services Section */
+    #Our_Services_Container{
+        width: 93%;
+    }
+    #Our_Services_Container img{
+        width: 100%;
+        height: auto;
+    }
+    /* Our Clients Section */
+    #Our_Clients_Container{
+        width: 93%;
+        margin: 7px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #Our_Clients_Container section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #Our_Clients_Container section img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    /* About US Page */
+    #Owner_Intro_Container{
+        grid-template-columns: 1fr;
+        padding:17px;
+        width: 95%;
+        margin: 5px auto;
+    }
+    #Owner_Intro_Container #Owner_Image_Container{
+        margin: 13px auto;
+        width: 95%;
+    }
+    #Owner_Intro_Container #Owner_Image_Container img{
+        width: 100%;
+        margin: 0px auto;
+        height: auto;
+    }
+    #Owner_Intro_Container #p_container{
+        border-top: 2px solid rgb(0, 195, 255);
+        border-bottom: 2px solid rgb(0, 195, 255);
+        width: 100%;
+        line-height: 23px;
+        text-align: left;
+        font-size: 14px;
+        letter-spacing: .7px;
+        word-spacing: .7px;
+    }
+    .words{margin: 14px;}
+    #Our_Team_Container{
+        padding:4px;
+        width: 95%;
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #Our_Team_Container .Team_Members{
+        padding:5px;
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        font-size: 17.7px;
+        text-align: justify;
+        letter-spacing: .5px;
+        background-color:rgb(51, 51, 51) ;
+    }
+    #Our_Team_Container .Team_Members .members_image{
+        width: 50%;
+        margin:10px auto;
+    }
+    #Our_Team_Container .Team_Members img{
+        width: 100%;
+        height: auto; 
+    }
+    #Our_Team_Container .Team_Members .members_details{
+        background-color:rgb(51, 51, 51) ;
+        color: white;
+        padding:10px;
+        width: 100%;
+        margin: 0px auto;
+        border-top:2px solid rgb(52, 198, 255);
+        border-bottom:2px solid rgb(52, 198, 255);
+    }
+    #Our_Team_Container .Team_Members .members_details p{
+        margin: 17px;
+        text-align: left;
+        font-size: 14px;
+        letter-spacing: .7px;
+        word-spacing: .7px;
+    }
+    
+    /* Gallery Page */
+    #gallery_container{width: 95%;}
+    /* Create four equal columns that sits next to each other */
+    .column {
+        max-width: 100%;
+    }
+      .gallery_info{
+        width: 95%;
+        font-size: 33px;
+        text-align: left;
+        letter-spacing: 1.5px;
+        word-spacing: 2px;
+      }
+      .gallery_info #owner_name{
+        margin-top: 20px;
+        text-align: right;
+        color: rgb(52, 198, 255);
+      }
+
+    /* Our Testimonials Page */
+    #Our_Testimonial_Container{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    #Our_Testimonial_Container .customers{
+        width: 100%;
+    }
+    #customer_review_container{
+        width: 95%;
+        font-size: 33px;
+        text-align: left;
+        letter-spacing: 1.5px;
+        word-spacing: 2px;
+    }
+    #customer_review_container #owner_name{
+        margin-top: 20px;
+        text-align: right;
+        color: rgb(52, 198, 255);
+    }
+    /* Contact US Page */
+    #Contact_US{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        font-size: 19px;
+        height: auto;
+    }
+    #Contact_US form{
+        width: 90%;
+    }
+    #Contact_US #other_contact_options{
+        border-left: none;
+        border-top: .1px solid rgb(131, 131, 131);
+        width: 95%;
+        font-size: 14.5px;
+        letter-spacing: .5px;
+        word-spacing: 1px;
+    }
+    /* Sign in Pop up */
+    .Login_Pop_Up{
+        border: .5px solid white;
+        position: fixed;
+        width: 85%;
+        left: 7%;
+    }
+    .Login_Pop_Up #sign_in_heading{
+        text-align: center;
+        margin: 40px;
+    }
+    .Login_Pop_Up #sign_in_form{width: 90%;}
+    /* Footer */
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(0, 24, 46);
+        font-size: 13px;
+    }
+    footer #Contact_Footer{
+        width: 97%;
+        padding:7px;
+        line-height: 30px;
+    }
+    footer #follow_us{
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        width: 50%;
+        letter-spacing: .7px;
+        padding:7px;
+    }
+    footer #Copyright{
+        border-top: .1px solid rgb(199, 199, 199);
+        padding: 10px;
+    }
+}
